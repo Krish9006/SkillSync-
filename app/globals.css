@@ -1,115 +1,139 @@
-/* app/globals.css */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* ===============================================
+   ✨ SKILLSYNC OS AESTHETIC by Krish Gupta
+   Smart, fluid, luminous — your signature style
+=============================================== */
 
-
-/* --------------- SkillSync Brand Theme --------------- */
-
-:root{
-  --bg-1: #030614;
-  --bg-2: #0a0f24;
-  --brand-1: #7c5cff;
-  --brand-2: #00c2ff;
-  --accent-soft: #4fd1c5;
-  --muted: #9aa4b2;
-  --glass: rgba(255,255,255,0.04);
-  --card: rgba(255,255,255,0.03);
+:root {
+  --bg-base: #4d73da;
+  --bg-top: #8fa5df;
+  --bg-glow1: rgba(133, 140, 184, 0.25);
+  --bg-glow2: rgba(0, 255, 196, 0.2);
+  --brand-primary: #7972d0;
+  --brand-accent: #00f5c8;
+  --brand-pink: #cd42bd;
+  --text-soft: #a8b5d1;
+  --text-strong: #e9eeff;
   --radius: 16px;
+  --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Light-mode adjustments (optional) */
-@media (prefers-color-scheme: light){
-  :root{
-    --bg-1: #f7fbff;
-    --bg-2: #eef6ff;
-    --brand-1: #2563eb;
-    --brand-2: #60a5fa;
-  }
-}
-
-html,body,#__next { height:100%; }
-
-body{
-  background:
-    radial-gradient(1000px 600px at 10% 10%, rgba(124,92,255,0.06), transparent 12%),
-    radial-gradient(900px 600px at 90% 90%, rgba(0,194,255,0.05), transparent 14%),
-    linear-gradient(180deg, var(--bg-1), var(--bg-2));
-  color:#e6eef7;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  overflow-x:hidden;
+/* 🌌 Animated Dynamic Background */
+body {
+  height: 100%;
+  background: linear-gradient(135deg, var(--bg-base), var(--bg-top)),
+              radial-gradient(circle at 20% 20%, var(--bg-glow1), transparent 40%),
+              radial-gradient(circle at 80% 80%, var(--bg-glow2), transparent 50%);
+  background-blend-mode: overlay;
+  animation: gradientFlow 12s ease-in-out infinite alternate;
+  background-size: 200% 200%;
+  color: var(--text-strong);
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
-/* background glows */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* 🧊 Floating Glow Layer */
 .bg-blur {
   position: fixed;
   inset: 0;
   z-index: -1;
   pointer-events: none;
 }
-.bg-blur .g1{
-  position:absolute; left:6%; top:-200px; width:720px; height:720px;
-  background: radial-gradient(circle at 30% 30%, rgba(124,92,255,0.24), transparent 40%);
-  filter: blur(120px);
-}
-.bg-blur .g2{
-  position:absolute; right:8%; bottom:-220px; width:640px; height:640px;
-  background: radial-gradient(circle at 60% 60%, rgba(0,194,255,0.20), transparent 40%);
-  filter: blur(130px);
-}
-
-/* glass card */
-.glass-card{
-  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
-  border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 18px;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 8px 40px rgba(0,0,0,0.35);
+.bg-blur::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(149, 144, 227, 0.1), transparent 60%),
+              radial-gradient(circle at 70% 80%, rgba(105, 190, 175, 0.1), transparent 70%);
+  filter: blur(140px);
+  opacity: 0.7;
 }
 
-/* brand gradient text utility */
-.text-brand-gradient {
-  background: linear-gradient(90deg, var(--brand-1), var(--brand-2));
+/* 🪩 Glass Components */
+.glass-card {
+  background: rgba(150, 102, 102, 0.04);
+  border: 1px solid rgba(196, 155, 22, 0.08);
+  border-radius: var(--radius);
+  backdrop-filter: blur(20px);
+  transition: var(--transition);
+}
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 40px rgba(0, 255, 196, 0.2);
+}
+
+/* 🌈 Gradient Text */
+.text-brand {
+  background: linear-gradient(90deg, var(--brand-primary), var(--brand-accent), var(--brand-pink));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Button utilities used in components */
+/* 🚀 Buttons */
 .btn {
-  @apply inline-flex items-center justify-center rounded-xl font-medium transition-all;
+  @apply inline-flex items-center justify-center font-semibold;
+  transition: var(--transition);
+  border-radius: var(--radius);
 }
 .btn-primary {
-  background: linear-gradient(90deg,var(--brand-1),var(--brand-2));
+  background: linear-gradient(90deg, var(--brand-primary), var(--brand-accent));
   color: white;
-  padding: .75rem 1.3rem;
-  box-shadow: 0 12px 40px rgba(37,99,235,0.18);
+  padding: 0.8rem 1.6rem;
+  box-shadow: 0 0 20px rgba(0,255,196,0.3);
 }
-.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 18px 60px rgba(37,99,235,0.25); }
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 0 40px rgba(109,99,255,0.3);
+}
 .btn-outline {
-  padding: .65rem 1.1rem;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.06);
-  background: transparent;
-  color: #dbeafe;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-soft);
+  background: rgba(255,255,255,0.02);
+  padding: 0.7rem 1.4rem;
+}
+.btn-outline:hover {
+  color: var(--brand-accent);
+  border-color: var(--brand-accent);
+  box-shadow: 0 0 20px rgba(0,255,196,0.2);
 }
 
-/* utilities */
-.container { max-width:1200px; margin:0 auto; padding:0 1.25rem; }
-.fade-in { animation: fadeIn .8s ease both; }
-@keyframes fadeIn { to { opacity: 1; transform: none; } }
-
-main { padding-top:5.5rem; }
-@keyframes subtleGlow {
-  0% { box-shadow: 0 0 10px rgba(0,194,255,0.3); }
-  50% { box-shadow: 0 0 25px rgba(124,92,255,0.4); }
-  100% { box-shadow: 0 0 10px rgba(0,194,255,0.3); }
+/* ✨ Animations */
+.fade-in {
+  animation: fadeIn 0.9s ease both;
 }
-.nav-glow {
-  animation: subtleGlow 6s ease-in-out infinite alternate;
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
+/* 💠 Navbar */
+.navbar {
+  background: rgba(133, 139, 198, 0.03);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(197, 104, 223, 0.01);
+  transition: var(--transition);
+}
+.navbar:hover {
+  box-shadow: 0 0 30px rgba(3, 159, 123, 0.1);
+}
+
+/* 🪶 Container */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+  

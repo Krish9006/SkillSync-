@@ -21,7 +21,7 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 w-full z-[60] transition-all duration-700 ${
           scrolled
-            ? "bg-[rgba(10,15,35,0.92)] shadow-[0_8px_30px_rgba(0,194,255,0.2)]"
+            ? "bg-[rgba(112, 129, 197, 0.92)] shadow-[0_8px_30px_rgba(0,194,255,0.2)]"
             : "bg-transparent"
         } backdrop-blur-2xl border-b border-white/10`}
       >
@@ -58,7 +58,7 @@ export default function Navbar() {
             className="hidden md:inline-flex px-6 py-2.5 rounded-lg font-semibold text-white bg-gradient-to-r from-[#7c5cff] via-[#00c2ff] to-[#4fd1c5]
                        hover:scale-[1.05] transition-all duration-300 shadow-[0_0_25px_rgba(0,194,255,0.35)]"
           >
-            Join Beta
+            Logn In / Sign Up
           </button>
 
           {/* 📱 Mobile Menu */}
@@ -74,7 +74,7 @@ export default function Navbar() {
         <div
           className={`md:hidden overflow-hidden transition-all duration-500 ${
             openMenu ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
-          } bg-[rgba(10,15,35,0.95)] backdrop-blur-xl border-t border-white/10`}
+          } bg-[rgba(116, 130, 186, 0.95)] backdrop-blur-xl border-t border-white/10`}
         >
           <div className="flex flex-col items-center py-6 gap-4 text-slate-300 font-medium">
             {["Features", "Community", "Mentors", "About"].map((item) => (
