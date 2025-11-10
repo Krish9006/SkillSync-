@@ -11,21 +11,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
-      <html lang="en">
-        <body className="min-h-screen antialiased overflow-visible">
-          {/* 🔝 Fixed Navbar */}
+      <html lang="en" suppressHydrationWarning>
+        <body className="min-h-screen antialiased overflow-visible bg-gradient-to-b from-[#030614] via-[#0a0f24] to-[#05070E] text-white relative">
           <Navbar />
-
-          {/* ✨ Properly aligned main content */}
           <main className="pt-24 pb-12 relative z-10 fade-in overflow-visible">
             {children}
           </main>
-
-          {/* 🌍 Footer */}
           <Footer />
-
-          {/* 💫 Soft background glow */}
-          <div className="pointer-events-none fixed inset-0 -z-10 bg-gradient-to-b from-[#05070E] via-[#0a0f24] to-[#05070E] opacity-95" />
+          <div className="pointer-events-none fixed inset-0 -z-10 bg-gradient-to-br from-[#030614] via-[#11182b] to-[#05070E] opacity-95" />
         </body>
       </html>
     </ClerkProvider>
