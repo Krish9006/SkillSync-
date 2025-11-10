@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { SignedIn, SignedOut, RedirectToSignIn } from "@clerk/nextjs";
 
 export default function Hero() {
   return (
@@ -29,8 +30,16 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="mt-8 text-6xl md:text-7xl font-extrabold leading-tight text-white tracking-tight"
         >
-          Empower <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7c5cff] to-[#00c2ff]">Students</span>. <br />
-          Build the <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00c2ff] to-[#4fd1c5]">Future</span>.
+          Empower{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7c5cff] to-[#00c2ff]">
+            Students
+          </span>
+          . <br />
+          Build the{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00c2ff] to-[#4fd1c5]">
+            Future
+          </span>
+          .
         </motion.h1>
 
         {/* 💬 Description */}
@@ -40,7 +49,8 @@ export default function Hero() {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="mt-6 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed"
         >
-          SkillSync is the next-gen network for students and mentors — where collaboration drives innovation, and learning meets opportunity.
+          SkillSync is the next-gen network for students and mentors — where
+          collaboration drives innovation, and learning meets opportunity.
         </motion.p>
 
         {/* 🚀 CTA Buttons */}
@@ -50,21 +60,29 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="mt-12 flex justify-center flex-wrap gap-4"
         >
-          <Link
-            href="/features"
-            className="relative inline-flex items-center justify-center px-7 py-3 rounded-xl font-semibold text-lg text-white bg-gradient-to-r from-[#7c5cff] via-[#5ea0ff] to-[#00c2ff] 
-                      shadow-[0_0_35px_rgba(0,194,255,0.25)] hover:shadow-[0_0_45px_rgba(0,194,255,0.4)] hover:scale-[1.03] transition-all duration-300"
-          >
-            Explore Platform
-          </Link>
+          {/* ✅ Only show when signed in */}
+          <SignedIn>
+            <Link
+              href="/features"
+              className="relative inline-flex items-center justify-center px-7 py-3 rounded-xl font-semibold text-lg text-white bg-gradient-to-r from-[#7c5cff] via-[#5ea0ff] to-[#00c2ff] 
+                        shadow-[0_0_35px_rgba(0,194,255,0.25)] hover:shadow-[0_0_45px_rgba(0,194,255,0.4)] hover:scale-[1.03] transition-all duration-300"
+            >
+              Explore Platform
+            </Link>
 
-          <Link
-            href="/community"
-            className="px-7 py-3 rounded-xl font-semibold text-lg text-slate-200 border border-white/15 bg-white/[0.04] backdrop-blur-lg hover:bg-white/[0.08]
-                      hover:border-sky-400/40 hover:text-white transition-all duration-300"
-          >
-            Join the Community
-          </Link>
+            <Link
+              href="/community"
+              className="px-7 py-3 rounded-xl font-semibold text-lg text-slate-200 border border-white/15 bg-white/[0.04] backdrop-blur-lg hover:bg-white/[0.08]
+                        hover:border-sky-400/40 hover:text-white transition-all duration-300"
+            >
+              Join the Community
+            </Link>
+          </SignedIn>
+
+          {/* ❌ If user not logged in — show Sign In redirect */}
+          <SignedOut>
+            <RedirectToSignIn />
+          </SignedOut>
         </motion.div>
 
         {/* 🌈 Visual Accent Line */}
@@ -82,7 +100,10 @@ export default function Hero() {
           transition={{ delay: 1.1 }}
           className="mt-6 text-sm text-slate-500"
         >
-          Built with passion by <span className="text-brand-gradient font-semibold">Krish Gupta</span>
+          Built with passion by{" "}
+          <span className="text-brand-gradient font-semibold">
+            Krish Gupta
+          </span>
         </motion.p>
       </div>
 

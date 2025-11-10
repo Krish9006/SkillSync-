@@ -51,7 +51,7 @@ export default function JoinBetaModal({ open, onClose }) {
             {!submitted ? (
               <>
                 <h2 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#7c5cff] via-[#00c2ff] to-[#4fd1c5] text-center mb-4">
-                  Login / Signup to SkillSync Beta
+                  Join SkillSync Beta 🚀
                 </h2>
                 <p className="text-slate-400 text-center mb-8 text-sm leading-relaxed">
                   Be among the first to explore SkillSync — the network where
@@ -70,8 +70,8 @@ export default function JoinBetaModal({ open, onClose }) {
                         setFormData({ ...formData, name: e.target.value })
                       }
                       placeholder="Enter your name"
-                      className="w-full mt-2 bg-[#0e1123]/80 border border-white/10 rounded-lg px-3 py-2.5
-                                 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all"
+                      className="w-full mt-2 bg-white/10 border border-white/10 rounded-lg px-3 py-2.5
+                                 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500"
                     />
                   </div>
 
@@ -86,8 +86,8 @@ export default function JoinBetaModal({ open, onClose }) {
                         setFormData({ ...formData, email: e.target.value })
                       }
                       placeholder="you@example.com"
-                      className="w-full mt-2 bg-[#0e1123]/80 border border-white/10 rounded-lg px-3 py-2.5
-                                 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all"
+                      className="w-full mt-2 bg-white/10 border border-white/10 rounded-lg px-3 py-2.5
+                                 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500"
                     />
                   </div>
 
@@ -101,22 +101,14 @@ export default function JoinBetaModal({ open, onClose }) {
                         onChange={(e) =>
                           setFormData({ ...formData, role: e.target.value })
                         }
-                        className="appearance-none w-full bg-[#0e1123]/90 border border-white/10 rounded-lg px-4 py-2.5 
-                                   text-white focus:ring-2 focus:ring-sky-500 focus:outline-none pr-10 cursor-pointer
-                                   hover:border-sky-400 transition-all duration-300"
+                        className="appearance-none w-full bg-gradient-to-r from-white/5 to-white/10 border border-white/10
+                                   rounded-lg px-4 py-2.5 text-white focus:ring-2 focus:ring-sky-500 focus:outline-none pr-10 cursor-pointer
+                                   z-[100001] relative"
                       >
-                        <option value="" className="bg-[#0e1123] text-slate-300">
-                          Select your role...
-                        </option>
-                        <option value="Student" className="bg-[#0e1123] text-white hover:bg-[#1b213d]">
-                          🎓 Student
-                        </option>
-                        <option value="Mentor" className="bg-[#0e1123] text-white hover:bg-[#1b213d]">
-                          🧠 Mentor
-                        </option>
-                        <option value="Recruiter" className="bg-[#0e1123] text-white hover:bg-[#1b213d]">
-                          💼 Recruiter
-                        </option>
+                        <option value="">Select your role...</option>
+                        <option value="Student">🎓 Student</option>
+                        <option value="Mentor">🧠 Mentor</option>
+                        <option value="Recruiter">💼 Recruiter</option>
                       </select>
                       <span className="absolute top-3 right-3 text-sky-400 pointer-events-none">▼</span>
                     </div>
@@ -127,12 +119,10 @@ export default function JoinBetaModal({ open, onClose }) {
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
                     type="submit"
-                    className="mt-3 w-full py-3 rounded-xl font-semibold text-white 
-                               bg-gradient-to-r from-[#7c5cff] via-[#00c2ff] to-[#4fd1c5]
-                               shadow-[0_0_30px_rgba(0,194,255,0.4)] hover:shadow-[0_0_60px_rgba(0,194,255,0.6)]
-                               transition-all duration-300"
+                    className="mt-3 w-full py-3 rounded-xl font-semibold text-white bg-gradient-to-r from-[#7c5cff] via-[#00c2ff] to-[#4fd1c5]
+                               shadow-[0_0_30px_rgba(0,194,255,0.4)] hover:shadow-[0_0_60px_rgba(0,194,255,0.6)] transition-all duration-300"
                   >
-                    Submit
+                    Join Beta
                   </motion.button>
                 </form>
               </>
@@ -148,7 +138,7 @@ export default function JoinBetaModal({ open, onClose }) {
                   You’re on the list!
                 </h3>
                 <p className="text-slate-400">
-                  Thanks for joining <span className="text-[#00c2ff]">SkillSync Beta</span>.<br />
+                  Thanks for joining <span className="text-[#00c2ff]">SkillSync Beta</span>.
                   You'll receive early access details soon.
                 </p>
                 <button
