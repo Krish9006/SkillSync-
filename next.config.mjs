@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  webpack: (config) => config,
   images: {
     remotePatterns: [
       {
@@ -8,14 +9,8 @@ const nextConfig = {
       },
     ],
   },
-
-  // ✅ Tell Next.js to use Turbopack (no webpack conflict)
-  turbopack: {},  
-
   experimental: {
-    serverActions: {
-      bodySizeLimit: "2mb",
-    },
+    serverActions: true,
   },
 };
 
