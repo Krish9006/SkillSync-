@@ -9,3 +9,46 @@
 [00:03:31.510] Server  LOG        Reload env: .env.local
 [00:03:50.409] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
 [00:03:58.131] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:45:39.585] Browser ERROR   Failed to fetch notifications {}
+[02:45:39.585] Browser ERROR   Failed to fetch notifications {}
+[02:45:39.585] Browser ERROR   Failed to fetch projects {}
+[02:45:39.585] Browser ERROR   Failed to fetch notifications {}
+[02:45:39.585] Browser ERROR   Failed to fetch notifications {}
+[02:45:39.585] Browser ERROR   Failed to fetch notifications {}
+[02:45:39.585] Browser ERROR   Failed to fetch notifications {}
+[02:45:39.585] Browser ERROR   Failed to fetch notifications {}
+[02:45:39.585] Browser ERROR   Failed to fetch notifications {}
+[02:45:39.586] Browser ERROR   Failed to fetch notifications {}
+[02:45:40.340] Browser ERROR   Failed to fetch notifications {}
+[02:45:40.340] Browser ERROR   Failed to fetch notifications {}
+[02:45:40.340] Browser ERROR   Failed to fetch notifications {}
+[02:45:40.340] Browser ERROR   Failed to fetch notifications {}
+[02:45:40.340] Browser ERROR   Failed to fetch notifications {}
+[02:46:01.343] Browser ERROR   Failed to fetch notifications {}
+[02:47:01.331] Browser ERROR   Failed to fetch notifications {}
+[02:48:01.345] Browser ERROR   Failed to fetch notifications {}
+[02:49:01.331] Browser ERROR   Failed to fetch notifications {}
+[02:50:02.341] Browser ERROR   Failed to fetch notifications {}
+[02:51:01.331] Browser ERROR   Failed to fetch notifications {}
+[02:52:01.340] Browser ERROR   Failed to fetch notifications {}
+[02:53:01.341] Browser ERROR   Failed to fetch notifications {}
+[02:54:01.337] Browser ERROR   Failed to fetch notifications {}
+[02:55:01.328] Browser ERROR   Failed to fetch notifications {}
+[02:55:31.329] Browser ERROR   Failed to fetch notifications {}
+[02:56:01.337] Browser ERROR   Failed to fetch notifications {}
+[02:57:01.339] Browser ERROR   Failed to fetch notifications {}
+[02:58:01.340] Browser ERROR   Failed to fetch notifications {}
+[02:59:01.329] Browser ERROR   Failed to fetch notifications {}
+[03:00:02.338] Browser ERROR   Failed to fetch notifications {}
+[03:01:02.334] Browser ERROR   Failed to fetch notifications {}
+[04:07:48.333] Browser ERROR   Failed to fetch notifications {}
+[04:07:48.333] Browser ERROR   Failed to fetch notifications {}
+[04:07:48.333] Browser ERROR   Failed to fetch notifications {}
+[04:07:48.333] Browser ERROR   Failed to fetch notifications {}
+[04:07:48.333] Browser ERROR   Failed to fetch notifications {}
+[04:07:48.333] Browser ERROR   Failed to fetch notifications {}
+[04:07:48.333] Browser ERROR   Failed to fetch notifications {}
+[04:07:48.333] Browser ERROR   Failed to fetch notifications {}
+[04:07:49.330] Browser ERROR   Failed to fetch notifications {}
+[04:08:01.333] Browser ERROR   Failed to fetch notifications {}
+[04:09:01.335] Browser ERROR   Failed to fetch notifications {}

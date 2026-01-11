@@ -18,8 +18,8 @@ export default function RequestsPage() {
         try {
             const token = user?.token || JSON.parse(localStorage.getItem('user'))?.token;
             const endpoint = activeTab === "received"
-                ? 'https://skillsync-backend-g2qf.onrender.com/api/requests/received'
-                : 'https://skillsync-backend-g2qf.onrender.com/api/requests/sent';
+                ? `${process.env.NEXT_PUBLIC_API_URL}/api/requests/received`
+                : `${process.env.NEXT_PUBLIC_API_URL}/api/requests/sent`;
 
             const res = await fetch(endpoint, {
                 headers: {
@@ -44,7 +44,7 @@ export default function RequestsPage() {
     const handleAction = async (requestId, status) => {
         try {
             const token = user?.token || JSON.parse(localStorage.getItem('user'))?.token;
-            const res = await fetch(`https://skillsync-backend-g2qf.onrender.com/api/requests/${requestId}`, {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/requests/${requestId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
