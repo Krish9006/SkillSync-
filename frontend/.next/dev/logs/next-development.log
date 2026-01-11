@@ -52,3 +52,65 @@
 [04:07:49.330] Browser ERROR   Failed to fetch notifications {}
 [04:08:01.333] Browser ERROR   Failed to fetch notifications {}
 [04:09:01.335] Browser ERROR   Failed to fetch notifications {}
+[06:22:07.816] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:23:40.332] Browser ERROR   Failed to fetch notifications {}
+[08:29:31.062] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:30:56.869] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[08:30:56.902] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[08:30:58.597] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:30:59.023] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:32:30.332] Browser ERROR   Failed to fetch notifications {}
+[08:37:30.330] Browser ERROR   Failed to fetch notifications {}
+[08:41:30.332] Browser ERROR   Failed to fetch notifications {}
+[08:47:30.008] Browser ERROR   Failed to fetch notifications {}
+[08:48:30.358] Browser ERROR   ./node_modules/next/dist/server/app-render/action-utils.js
+Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'
+
+Import trace for requested module:
+./node_modules/next/dist/server/app-render/action-utils.js
+[08:48:30.361] Browser ERROR   ./node_modules/next/dist/server/app-render/action-utils.js
+Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'
+
+Import trace for requested module:
+./node_modules/next/dist/server/app-render/action-utils.js
+[08:48:31.259] Server  ERROR    ⨯ ./node_modules/next/dist/server/app-render/action-utils.js
+Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'
+
+Import trace for requested module:
+./node_modules/next/dist/server/app-render/action-utils.js
+[08:48:31.382] Browser ERROR   ./node_modules/next/dist/server/app-render/action-utils.js
+Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'
+
+Import trace for requested module:
+./node_modules/next/dist/server/app-render/action-utils.js
+[08:48:31.383] Browser ERROR   ./node_modules/next/dist/server/app-render/action-utils.js
+Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'
+
+Import trace for requested module:
+./node_modules/next/dist/server/app-render/action-utils.js
+[08:48:40.472] Server  LOG      ○ Compiling /_error ...
+[08:48:40.991] Server  ERROR    ⨯ ./node_modules/next/dist/server/app-render/action-utils.js
+Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'
+
+Import trace for requested module:
+./node_modules/next/dist/server/app-render/action-utils.js
+[08:48:41.253] Browser ERROR   ./node_modules/next/dist/server/app-render/action-utils.js
+Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'
+
+Import trace for requested module:
+./node_modules/next/dist/server/app-render/action-utils.js
+[08:48:41.254] Browser ERROR   ./node_modules/next/dist/server/app-render/action-utils.js
+Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'
+
+Import trace for requested module:
+./node_modules/next/dist/server/app-render/action-utils.js
+[08:48:42.062] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'
+[08:48:42.334] Browser ERROR   ./node_modules/next/dist/server/app-render/action-utils.js
+Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'
+[08:48:42.334] Browser ERROR   ./node_modules/next/dist/server/app-render/action-utils.js
+Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'
+[08:48:42.428] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'
+[08:48:43.336] Browser ERROR   ./node_modules/next/dist/server/app-render/action-utils.js
+Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'

@@ -334,6 +334,7 @@ export default function TeamFinderPage() {
                 onClose={() => setIsJoinModalOpen(false)}
                 teamName={selectedTeam?.title}
                 teamId={selectedTeam?._id || selectedTeam?.id}
+                receiverId={selectedTeam?.creator?._id || selectedTeam?.creator}
             />
 
             <CreateTeamModal

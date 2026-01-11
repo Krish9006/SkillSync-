@@ -4,31 +4,49 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, CheckCircle, Send, Sparkles } from "lucide-react";
 import LoadingSpinner from "./LoadingSpinner";
+import { useAuth } from "../../context/AuthContext";
 import { addRequest } from "../teamfinder/data";
 
-export default function JoinTeamModal({ open, onClose, teamName, teamId }) {
+export default function JoinTeamModal({ open, onClose, teamName, teamId, receiverId }) {
     const [step, setStep] = useState("form"); // 'form' | 'success'
     const [isLoading, setIsLoading] = useState(false);
     const [formData, setFormData] = useState({ pitch: "", portfolio: "" });
 
-    const handleSubmit = (e) => {
+    const { user } = useAuth(); // Get auth context
+    const token = user?.token || (typeof window !== 'undefined' ? JSON.parse(localStorage.getItem('user'))?.token : null);
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setIsLoading(true);
 
-        // Save request to localStorage
-        setTimeout(() => {
-            addRequest({
-                from: "You",
-                to: teamName || "Team",
-                type: "Join Request",
-                message: formData.pitch,
-                portfolio: formData.portfolio,
-                teamId: teamId
+        try {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/requests`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify({
+                    receiverId: receiverId,
+                    teamId: teamId,
+                    type: 'join_team',
+                    message: `Pitch: ${formData.pitch}\nPortfolio: ${formData.portfolio}`
+                })
             });
 
-            setIsLoading(false);
+            const data = await res.json();
+
+            if (!res.ok) {
+                throw new Error(data.message || "Failed to send request");
+            }
+
             setStep("success");
-        }, 1500);
+        } catch (error) {
+            console.error(error);
+            alert(error.message);
+        } finally {
+            setIsLoading(false);
+        }
     };
 
     const reset = () => {
