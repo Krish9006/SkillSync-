@@ -17,7 +17,7 @@ export default function ConnectModal({ open, onClose, studentName, studentId }) 
 
         try {
             const token = user?.token || JSON.parse(localStorage.getItem('user'))?.token;
-            const res = await fetch("http://localhost:5000/api/requests", {
+            const res = await fetch("https://skillsync-backend-g2qf.onrender.com/api/requests", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

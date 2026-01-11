@@ -24,7 +24,7 @@ export default function ProfilePage() {
             }
 
             try {
-                const res = await fetch("http://localhost:5000/api/users/me", {
+                const res = await fetch("https://skillsync-backend-g2qf.onrender.com/api/users/me", {
                     headers: {
                         "Authorization": `Bearer ${token}`
                     }

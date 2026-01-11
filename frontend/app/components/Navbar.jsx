@@ -24,7 +24,7 @@ export default function Navbar() {
         const token = user.token || JSON.parse(localStorage.getItem('user'))?.token;
         if (!token) return;
 
-        const res = await fetch('http://localhost:5000/api/requests/received', {
+        const res = await fetch('https://skillsync-backend-g2qf.onrender.com/api/requests/received', {
           headers: { 'Authorization': `Bearer ${token}` }
         });
         if (res.ok) {

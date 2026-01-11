@@ -40,7 +40,7 @@ export default function CreateTeamModal({ open, onClose }) {
             const storedUser = JSON.parse(localStorage.getItem('user'));
             const token = storedUser?.token;
 
-            const res = await fetch("http://localhost:5000/api/projects", {
+            const res = await fetch("https://skillsync-backend-g2qf.onrender.com/api/projects", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

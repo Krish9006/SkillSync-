@@ -141,3 +141,54 @@
 [00:24:15.677] Browser ERROR   Failed to fetch notifications {}
 [00:24:45.572] Browser ERROR   Failed to fetch notifications {}
 [00:24:45.635] Browser ERROR   Failed to fetch notifications {}
+[00:25:05.854] Browser ERROR   Failed to fetch notifications {}
+[00:25:15.570] Browser ERROR   Failed to fetch notifications {}
+[00:25:15.644] Browser ERROR   Failed to fetch notifications {}
+[00:25:45.591] Browser ERROR   Failed to fetch notifications {}
+[00:25:45.653] Browser ERROR   Failed to fetch notifications {}
+[00:26:07.858] Browser ERROR   Failed to fetch notifications {}
+[00:26:15.563] Browser ERROR   Failed to fetch notifications {}
+[00:26:15.656] Browser ERROR   Failed to fetch notifications {}
+[00:26:45.562] Browser ERROR   Failed to fetch notifications {}
+[00:26:45.620] Browser ERROR   Failed to fetch notifications {}
+[00:27:05.857] Browser ERROR   Failed to fetch notifications {}
+[00:27:15.593] Browser ERROR   Failed to fetch notifications {}
+[00:27:15.623] Browser ERROR   Failed to fetch notifications {}
+[00:27:45.571] Browser ERROR   Failed to fetch notifications {}
+[00:27:45.649] Browser ERROR   Failed to fetch notifications {}
+[00:27:55.866] Browser ERROR   Failed to fetch notifications {}
+[00:28:15.583] Browser ERROR   Failed to fetch notifications {}
+[00:28:15.659] Browser ERROR   Failed to fetch notifications {}
+[00:28:15.860] Browser ERROR   Failed to fetch notifications {}
+[00:28:45.573] Browser ERROR   Failed to fetch notifications {}
+[00:28:45.636] Browser ERROR   Failed to fetch notifications {}
+[00:28:45.870] Browser ERROR   Failed to fetch notifications {}
+[00:29:15.580] Browser ERROR   Failed to fetch notifications {}
+[00:29:15.657] Browser ERROR   Failed to fetch notifications {}
+[00:29:15.860] Browser ERROR   Failed to fetch notifications {}
+[00:29:45.565] Browser ERROR   Failed to fetch notifications {}
+[00:29:45.640] Browser ERROR   Failed to fetch notifications {}
+[00:29:45.862] Browser ERROR   Failed to fetch notifications {}
+[00:30:15.584] Browser ERROR   Failed to fetch notifications {}
+[00:30:15.680] Browser ERROR   Failed to fetch notifications {}
+[00:30:15.865] Browser ERROR   Failed to fetch notifications {}
+[00:30:45.575] Browser ERROR   Failed to fetch notifications {}
+[00:30:45.652] Browser ERROR   Failed to fetch notifications {}
+[00:30:45.869] Browser ERROR   Failed to fetch notifications {}
+[00:31:15.590] Browser ERROR   Failed to fetch notifications {}
+[00:31:15.668] Browser ERROR   Failed to fetch notifications {}
+[00:31:15.858] Browser ERROR   Failed to fetch notifications {}
+[00:31:45.571] Browser ERROR   Failed to fetch notifications {}
+[00:31:45.647] Browser ERROR   Failed to fetch notifications {}
+[00:31:45.865] Browser ERROR   Failed to fetch notifications {}
+[00:39:38.314] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:39:38.318] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:39:38.366] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:39:48.929] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:49.320] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:49.943] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[00:39:50.790] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:51.850] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:39:54.318] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:54.783] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:40:09.261] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.

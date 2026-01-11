@@ -29,7 +29,7 @@ export default function CreateProfilePage() {
 
             if (token) {
                 try {
-                    const res = await fetch("http://localhost:5000/api/users/me", {
+                    const res = await fetch("https://skillsync-backend-g2qf.onrender.com/api/users/me", {
                         headers: {
                             "Authorization": `Bearer ${token}`
                         }
@@ -68,7 +68,7 @@ export default function CreateProfilePage() {
             const storedUser = JSON.parse(localStorage.getItem('user'));
             const token = storedUser?.token;
 
-            const res = await fetch("http://localhost:5000/api/users/profile", {
+            const res = await fetch("https://skillsync-backend-g2qf.onrender.com/api/users/profile", {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
