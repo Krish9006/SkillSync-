@@ -28,7 +28,7 @@ export default function TeamFinderPage() {
     useEffect(() => {
         const fetchProjects = async () => {
             try {
-                const res = await fetch('https://skillsync-backend-g2qf.onrender.com/api/projects');
+                const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/projects`);
                 const data = await res.json();
                 if (res.ok) {
                     setProjects(data);
@@ -48,7 +48,7 @@ export default function TeamFinderPage() {
             const fetchUsers = async () => {
                 try {
                     const token = user?.token || JSON.parse(localStorage.getItem('user'))?.token;
-                    const res = await fetch('https://skillsync-backend-g2qf.onrender.com/api/users', {
+                    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/users`, {
                         headers: {
                             'Authorization': `Bearer ${token}`
                         }
