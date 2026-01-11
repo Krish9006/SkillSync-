@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
     const [loading, setLoading] = useState(true); // Loading initial session
     const router = useRouter();
 
-    const API_URL = "https://skillsync-backend-g2qf.onrender.com/api/auth";
+    const API_URL = `${process.env.NEXT_PUBLIC_API_URL}/api/auth`;
 
     // Check if user is logged in (check localStorage/Cookie)
     useEffect(() => {

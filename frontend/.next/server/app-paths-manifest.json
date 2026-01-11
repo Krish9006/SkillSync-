@@ -1,0 +1,16 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
+  "/community/page": "app/community/page.js",
+  "/create-profile/page": "app/create-profile/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/features/page": "app/features/page.js",
+  "/mentors/page": "app/mentors/page.js",
+  "/page": "app/page.js",
+  "/profile/page": "app/profile/page.js",
+  "/sign-in/page": "app/sign-in/page.js",
+  "/sign-up/page": "app/sign-up/page.js",
+  "/teamfinder/page": "app/teamfinder/page.js",
+  "/teamfinder/requests/page": "app/teamfinder/requests/page.js"
+}
