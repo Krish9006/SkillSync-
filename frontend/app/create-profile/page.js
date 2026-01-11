@@ -122,13 +122,24 @@ export default function CreateProfilePage() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-sm text-slate-400 mb-1">Role / Title</label>
-                                    <input
-                                        type="text"
+                                    <label className="block text-sm text-slate-400 mb-1">Role / Domain</label>
+                                    <select
                                         className="w-full bg-os-bg border border-os-border rounded-xl p-3 focus:border-brand-primary focus:ring-1 focus:ring-brand-primary outline-none transition-all"
-                                        placeholder="e.g. Full Stack Developer"
                                         value={formData.role}
                                         onChange={(e) => setFormData({ ...formData, role: e.target.value })}
-                                    />
+                                    >
+                                        <option value="Student">Student</option>
+                                        <option value="Frontend Developer">Frontend Developer</option>
+                                        <option value="Backend Developer">Backend Developer</option>
+                                        <option value="Full Stack Developer">Full Stack Developer</option>
+                                        <option value="App Developer">App Developer</option>
+                                        <option value="AI/ML Engineer">AI/ML Engineer</option>
+                                        <option value="UI/UX Designer">UI/UX Designer</option>
+                                        <option value="DevOps Engineer">DevOps Engineer</option>
+                                        <option value="Data Scientist">Data Scientist</option>
+                                        <option value="Product Manager">Product Manager</option>
+                                        <option value="Blockchain Developer">Blockchain Developer</option>
+                                    </select>
                                 </div>
                                 <div>
                                     <label className="block text-sm text-slate-400 mb-1">Bio (Short)</label>
