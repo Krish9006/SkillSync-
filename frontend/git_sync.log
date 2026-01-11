@@ -1,0 +1,51 @@
+
+> skillsync@1.0.0 dev
+> next dev --webpack
+
+   ▲ Next.js 16.0.1 (webpack)
+   - Local:        http://localhost:3000
+   - Network:      http://10.108.168.112:3000
+
+ ✓ Starting...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+ ✓ Ready in 2.3s
+ ○ Compiling / ...
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=x1nndlowcje4ytl2awyie4ky4t5bsgtqylb1zh7v&return_url=http%3A%2F%2Flocalhost%3A3000%2F
+
+ GET / 200 in 13.5s (compile: 11.1s, proxy.ts: 257ms, render: 2.2s)
+ GET / 200 in 887ms (compile: 40ms, proxy.ts: 425ms, render: 422ms)
+ POST / 200 in 157ms (compile: 36ms, proxy.ts: 76ms, render: 46ms)
+ GET / 200 in 528ms (compile: 46ms, proxy.ts: 217ms, render: 265ms)
+ POST / 303 in 988ms (compile: 36ms, proxy.ts: 139ms, render: 813ms)
+ GET / 200 in 408ms (compile: 66ms, proxy.ts: 97ms, render: 245ms)
+ GET / 200 in 440ms (compile: 15ms, proxy.ts: 36ms, render: 390ms)
+ GET / 200 in 599ms (compile: 63ms, proxy.ts: 56ms, render: 480ms)
+ POST / 200 in 76ms (compile: 21ms, proxy.ts: 32ms, render: 24ms)
+ POST / 200 in 123ms (compile: 36ms, proxy.ts: 34ms, render: 54ms)
+ POST / 200 in 140ms (compile: 33ms, proxy.ts: 86ms, render: 21ms)
+ POST / 200 in 101ms (compile: 14ms, proxy.ts: 46ms, render: 40ms)
+ GET / 200 in 287ms (compile: 13ms, proxy.ts: 42ms, render: 232ms)
+ POST / 200 in 114ms (compile: 15ms, proxy.ts: 69ms, render: 30ms)
+ POST / 200 in 98ms (compile: 23ms, proxy.ts: 41ms, render: 34ms)
+ ○ Compiling /about ...
+ GET /about 200 in 4.3s (compile: 3.9s, proxy.ts: 44ms, render: 404ms)
+ ○ Compiling /teamfinder ...
+ GET /teamfinder 200 in 9.8s (compile: 9.5s, proxy.ts: 58ms, render: 231ms)
+ ○ Compiling /mentors ...
+ GET /mentors 200 in 7.3s (compile: 6.9s, proxy.ts: 49ms, render: 274ms)
+ GET /community 200 in 3.6s (compile: 3.2s, proxy.ts: 41ms, render: 360ms)
+ ○ Compiling /_not-found ...
+ GET /grid.svg 404 in 5.9s (compile: 4.8s, render: 1104ms)
+ GET / 200 in 823ms (compile: 72ms, proxy.ts: 692ms, render: 59ms)
+
+[35m
+[Clerk]:[0m You are running in keyless mode.
+You can [35mclaim your keys[0m by visiting https://dashboard.clerk.com/apps/claim?token=x1nndlowcje4ytl2awyie4ky4t5bsgtqylb1zh7v&return_url=http%3A%2F%2Flocalhost%3A3000%2F
+
+ GET / 200 in 498ms (compile: 41ms, proxy.ts: 31ms, render: 427ms)
+ POST / 200 in 97ms (compile: 13ms, proxy.ts: 50ms, render: 35ms)
+ POST / 200 in 93ms (compile: 10ms, proxy.ts: 42ms, render: 41ms)
+ GET /teamfinder 200 in 1487ms (compile: 156ms, proxy.ts: 1173ms, render: 158ms)

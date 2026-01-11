@@ -1,0 +1,12 @@
+
+> skillsync@1.0.0 dev
+> next dev --webpack
+
+ ⚠ Port 3000 is in use by process 26712, using available port 3002 instead.
+   ▲ Next.js 16.0.1 (webpack)
+   - Local:        http://localhost:3002
+   - Network:      http://10.108.168.112:3002
+
+ ✓ Starting...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[?25h

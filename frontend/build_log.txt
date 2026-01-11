@@ -1,0 +1,40 @@
+
+> skillsync@1.0.0 build
+> next build
+
+   ▲ Next.js 16.0.1 (Turbopack)
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 2 errors:
+./app/skeletons.css
+Error evaluating Node.js code
+CssSyntaxError: C:\Users\gupta\OneDrive\Desktop\SkillSync\app\skeletons.css:2:1: `@layer components` is used but no matching `@tailwind components` directive is present.
+    at Input.error (node_modules/postcss/lib/input.js:135:16) [C:\Users\gupta\OneDrive\Desktop\SkillSync\.next\build\chunks\node_modules_fe693df6._.js:4651:22]
+    at AtRule.error (node_modules/postcss/lib/node.js:146:32) [C:\Users\gupta\OneDrive\Desktop\SkillSync\.next\build\chunks\node_modules_fe693df6._.js:928:38]
+    [at normalizeTailwindDirectives (C:\Users\gupta\OneDrive\Desktop\SkillSync\node_modules\tailwindcss\lib\lib\normalizeTailwindDirectives.js:72:32)]
+    [at C:\Users\gupta\OneDrive\Desktop\SkillSync\node_modules\tailwindcss\lib\processTailwindFeatures.js:29:98]
+    [at plugins (C:\Users\gupta\OneDrive\Desktop\SkillSync\node_modules\tailwindcss\lib\plugin.js:38:69)]
+    at LazyResult.runOnRoot (node_modules/postcss/lib/lazy-result.js:361:16) [C:\Users\gupta\OneDrive\Desktop\SkillSync\.next\build\chunks\node_modules_fe693df6._.js:6264:24]
+    at LazyResult.runAsync (node_modules/postcss/lib/lazy-result.js:290:26) [C:\Users\gupta\OneDrive\Desktop\SkillSync\.next\build\chunks\node_modules_fe693df6._.js:6203:32]
+    at LazyResult.async (node_modules/postcss/lib/lazy-result.js:192:30) [C:\Users\gupta\OneDrive\Desktop\SkillSync\.next\build\chunks\node_modules_fe693df6._.js:6135:36]
+    at LazyResult.then (node_modules/postcss/lib/lazy-result.js:436:17) [C:\Users\gupta\OneDrive\Desktop\SkillSync\.next\build\chunks\node_modules_fe693df6._.js:6321:21]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+
+./app/components/CreateTeamModal.jsx:5:5
+Parsing ecmascript source code failed
+[0m [90m 3 |[39m [36mimport[39m { useState } [36mfrom[39m [32m"react"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { motion[33m,[39m [33mAnimatePresence[39m } [36mfrom[39m [32m"framer-motion"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m     }[33m;[39m
+ [90m   |[39m     [31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mreturn[39m (
+ [90m 8 |[39m     [33m<[39m[33mAnimatePresence[39m[33m>[39m[0m
+
+Expression expected
+
+
+    at <unknown> (./app/components/CreateTeamModal.jsx:5:5)
