@@ -434,7 +434,7 @@ export const requests = [
 // 📦 REQUEST MANAGEMENT UTILITIES
 // ============================================
 
-const STORAGE_KEY = 'skillsync_requests';
+const STORAGE_KEY = 'projectpals_requests';
 
 // Initialize localStorage with sample data if empty
 export const initializeRequests = () => {

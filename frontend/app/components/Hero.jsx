@@ -120,7 +120,7 @@ export default function Hero() {
                   <div className="flex gap-2">
                     <span className="text-signal-green">➜</span>
                     <span className="text-signal-blue">~</span>
-                    <span className="text-white">skillsync --init</span>
+                    <span className="text-white">project-pals --init</span>
                   </div>
 
                   <div className="text-slate-300 pl-4 space-y-1">

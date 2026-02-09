@@ -22,7 +22,7 @@ const userSchema = new mongoose.Schema({
         select: false // Don't return password by default
     },
 
-    // Profile Fields (SkillSync Specific)
+    // Profile Fields (Project Pals Specific)
     role: {
         type: String,
         default: 'Student' // e.g., Full Stack Developer, UI/UX Designer

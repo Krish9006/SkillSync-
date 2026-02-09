@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Target, Heart, Zap } from "lucide-react";
+import { ArrowRight, Target, Heart, Zap, Users } from "lucide-react";
 
 export default function AboutPage() {
   return (
@@ -21,7 +21,7 @@ export default function AboutPage() {
             className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-heading font-black text-white mb-10 tracking-tight leading-[1.05]"
           >
             The Vision Behind <br />
-            <span className="bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent bg-clip-text text-transparent">SkillSync</span>
+            <span className="bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent bg-clip-text text-transparent">Project Pals</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -53,7 +53,7 @@ export default function AboutPage() {
                 Democratizing Opportunity for Builders
               </h2>
               <p className="text-slate-300 text-lg leading-relaxed mb-6 font-medium">
-                Talent is evenly distributed, but opportunity is not. SkillSync bridges that gap by connecting ambitious students with the right teammates and mentors, regardless of their university or location.
+                Talent is evenly distributed, but opportunity is not. Project Pals bridges that gap by connecting ambitious students with the right teammates and mentors, regardless of their university or location.
               </p>
               <p className="text-slate-300 text-lg leading-relaxed">
                 We believe that the <span className="text-brand-primary font-bold">best way to learn is by building</span>. And the best way to build is <span className="text-brand-secondary font-bold">together</span>.
@@ -117,7 +117,7 @@ export default function AboutPage() {
               </div>
               <div className="text-left">
                 <div className="text-white font-black text-lg">Krish Gupta</div>
-                <div className="text-slate-400 text-sm font-semibold">Founder, SkillSync</div>
+                <div className="text-slate-400 text-sm font-semibold">Founder, Project Pals</div>
               </div>
             </div>
           </div>
@@ -127,8 +127,4 @@ export default function AboutPage() {
   );
 }
 
-function Users({ size }) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
-  )
-}
+

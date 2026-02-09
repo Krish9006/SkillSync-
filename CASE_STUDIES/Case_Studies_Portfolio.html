@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krish Gupta - Case Studies Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e293b;
+            --text: #334155;
+            --bg: #ffffff;
+            --accent: #f8fafc;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            margin: 0;
+            padding: 0;
+            -webkit-print-color-adjust: exact;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+
+        /* Case Study Layout */
+        .case-study {
+            page-break-after: always; /* Forces new page for PDF */
+            margin-bottom: 80px;
+        }
+
+        .case-header {
+            background: var(--accent);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border);
+        }
+
+        .project-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin: 0;
+        }
+
+        .project-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .badge {
+            background: var(--primary);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            color: var(--secondary);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--primary);
+            padding-left: 15px;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .tech-card {
+            background: #fff;
+            border: 1px solid var(--border);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .tech-card strong {
+            display: block;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Comparison / Challenge Cards */
+        .challenge-box {
+            background: #fffafa;
+            border-left: 4px solid #ef4444;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .solution-box {
+            background: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .box-title {
+            font-weight: 700;
+            display: block;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+        }
+
+        /* Print Specifics */
+        @media print {
+            body { background: white; }
+            .container { width: 100%; max-width: none; padding: 20px; }
+            a { text-decoration: none; color: black; }
+            .no-print { display: none; }
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #94a3b8;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="no-print" style="text-align: center; margin-bottom: 20px; background: #e0f2fe; padding: 15px; border-radius: 8px; color: #0c4a6e;">
+        <strong>Instructions:</strong> Right-click this page and select <strong>"Print"</strong> → Destination: <strong>"Save as PDF"</strong> to create a professional document.
+    </div>
+
+    <header>
+        <h1>Krish Gupta</h1>
+        <div class="subtitle">Full Stack Developer | MERN Stack Specialist</div>
+        <div class="contact-info">
+            <a href="https://portfolio-krish-lime.vercel.app/" target="_blank">Portfolio</a> • 
+            <a href="https://github.com/Krish9006" target="_blank">GitHub</a>
+        </div>
+    </header>
+
+    <!-- CASE STUDY 1: SKILLSYNC -->
+    <article class="case-study">
+        <div class="case-header">
+            <h2 class="project-title">SkillSync</h2>
+            <p>A "LinkedIn for Hackathons" - Connecting students with collaborators based on verified skills.</p>
+            <div class="project-meta">
+                <span class="badge">Social Platform</span>
+                <span class="badge">Next.js 14</span>
+                <span class="badge">3D Graphics</span>
+            </div>
+        </div>
+
+        <h3 class="section-title">The Challenge</h3>
+        <p>In the academic and hackathon ecosystem, students struggle to find teammates with complementary skills. Existing platforms are too broad, and verify proficiency is difficult without seeing previous work. I needed to build a platform that makes "scouting" talent intuitive and engaging.</p>
+
+        <h3 class="section-title">Technical Architecture</h3>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <strong>Frontend</strong>
+                Next.js 14 (App Router), Tailwind CSS, Framer Motion, Three.js (@react-three/fiber).
+            </div>
+            <div class="tech-card">
+                <strong>Backend</strong>
+                Node.js, Express.js architecture with RESTful API endpoints.
+            </div>
+            <div class="tech-card">
+                <strong>Database</strong>
+                MongoDB (NoSQL) for flexible user profile schemas and connection requests.
+            </div>
+        </div>
+
+        <h3 class="section-title">Key Technical Problem Solved</h3>
+        <div class="challenge-box">
+            <span class="box-title" style="color: #ef4444;">Problem: Performance vs. Aesthetics</span>
+            Integrating rich 3D graphics (Three.js) usually kills load times and mobile performance. The initial build had a layout shift (CLS) of 0.4 and TTI of >3s.
+        </div>
+        <div class="solution-box">
+            <span class="box-title" style="color: #22c55e;">Solution: Optimization Strategy</span>
+            I implemented <strong>dynamic imports</strong> for heavy 3D canvas components, reducing the initial bundle size by 40%. I also used low-poly models and limited real-time shadow casting to ensure a steady <strong>60fps</strong> on mid-range devices.
+        </div>
+    </article>
+
+    <!-- CASE STUDY 2: KRISHKA KITCHEN -->
+    <article class="case-study">
+        <div class="case-header">
+            <h2 class="project-title">Krishka Kitchen</h2>
+            <p>A full-stack culinary community platform enabling real-time recipe sharing and social interaction.</p>
+            <div class="project-meta">
+                <span class="badge">Community App</span>
+                <span class="badge">MERN Stack</span>
+                <span class="badge">Authentication</span>
+            </div>
+        </div>
+
+        <h3 class="section-title">The Challenge</h3>
+        <p>Building a content-heavy application where users can not only view content but interact with it (User Generated Content). The challenge was creating a secure environment for users to register, post recipes, and interact (like/comment) in real-time without database bottlenecks.</p>
+
+        <h3 class="section-title">Technical Architecture</h3>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <strong>Authentication</strong>
+                Custom JWT implementation with secure HTTP-only cookies to prevent XSS attacks.
+            </div>
+            <div class="tech-card">
+                <strong>API Design</strong>
+                MVC Pattern (Model-View-Controller) to separate business logic from routing.
+            </div>
+            <div class="tech-card">
+                <strong>Deployment</strong>
+                Frontend on Vercel, Backend on Render. Handled CORS configurations and environment security.
+            </div>
+        </div>
+
+        <h3 class="section-title">Key Technical Problem Solved</h3>
+        <div class="challenge-box">
+            <span class="box-title" style="color: #ef4444;">Problem: Deployment & Environment Chaos</span>
+            Connecting a deployed frontend (Vercel) to a separate backend (Render) caused significant CORS (Cross-Origin Resource Sharing) issues and state persistence failures upon refresh.
+        </div>
+        <div class="solution-box">
+            <span class="box-title" style="color: #22c55e;">Solution: Robust Configuration</span>
+            I re-architected the backend configuration to whitelist specific production domains and implemented a strict Environment Variable policy. I also created a "ping" service to keep the free-tier Render server warm, reducing cold-start latency for users.
+        </div>
+    </article>
+
+    <!-- CASE STUDY 3: RENTAFELLOW -->
+    <article class="case-study">
+        <div class="case-header">
+            <h2 class="project-title">RentAFellow</h2>
+            <p>A Progressive Web App (PWA) focusing on platonic companionship and ethical social connection.</p>
+            <div class="project-meta">
+                <span class="badge">PWA</span>
+                <span class="badge">UX Design</span>
+                <span class="badge">Mobile First</span>
+            </div>
+        </div>
+
+        <h3 class="section-title">The Challenge</h3>
+        <p>Designing a social app that explicitly avoids the "dating/escort" stigma. The UI needed to be friendly, safe, and trustworthy ("Zero Creepiness"). Technically, it needed to feel like a native app on mobile devices without the friction of app store downloads.</p>
+
+        <h3 class="section-title">Tech & Design Strategy</h3>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <strong>PWA Architecture</strong>
+                Service Workers for offline caching and "Add to Home Screen" capability.
+            </div>
+            <div class="tech-card">
+                <strong>Modular Routing</strong>
+                Implemented a scalable frontend router to handle dynamic categories (Movies, events, travel) efficiently.
+            </div>
+            <div class="tech-card">
+                <strong>UI/UX</strong>
+                Used color psychology (Blues/Greens) and rounded, "soft" UI elements to evoke trust and platonic safety.
+            </div>
+        </div>
+
+        <h3 class="section-title">Key Technical Problem Solved</h3>
+        <div class="challenge-box">
+            <span class="box-title" style="color: #ef4444;">Problem: Mobile Responsiveness & Navigation</span>
+            Complex navigation menus often break on mobile screens. We needed a system that handled deep nesting (Category -> Profile -> Booking) without overwhelming the user.
+        </div>
+        <div class="solution-box">
+            <span class="box-title" style="color: #22c55e;">Solution: Component Modularization</span>
+            I built a reusable, modular Navbar and Layout system. By decoupling the navigation logic from the page content, I ensured that the state (User Session) persisted smoothly during navigation transitions, creating a seamless "App-like" feel on the mobile web.
+        </div>
+    </article>
+
+    <footer class="footer">
+        &copy; 2026 Krish Gupta. All Rights Reserved.
+    </footer>
+</div>
+
+</body>
+</html>

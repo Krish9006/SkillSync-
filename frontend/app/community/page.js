@@ -55,7 +55,7 @@ export default function CommunityPage() {
             transition={{ delay: 0.1 }}
             className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto font-medium leading-relaxed"
           >
-            SkillSync is more than a platform. It's a movement of ambitious students building the future.
+            Project Pals is more than a platform. It's a movement of ambitious students building the future.
             <br className="hidden md:block" />
             Don't just watch from the sidelines.
           </motion.p>
@@ -100,7 +100,7 @@ export default function CommunityPage() {
               Ready to start your journey?
             </h2>
             <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto font-medium">
-              Join thousands of students who are already building, learning, and growing on SkillSync.
+              Join thousands of students who are already building, learning, and growing on Project Pals.
             </p>
             <Link href="/signup">
               <button className="group relative px-10 py-5 rounded-2xl bg-white text-slate-900 font-black text-lg hover:scale-105 transition-all duration-300 shadow-xl shadow-white/10 flex items-center gap-3 mx-auto overflow-hidden">

@@ -38,7 +38,7 @@ export default function FeaturesPage() {
           transition={{ duration: 0.6 }}
           className="text-5xl font-extrabold text-white"
         >
-          Explore <span className="text-brand-gradient">SkillSync</span> Features
+          Explore <span className="text-brand-gradient">Project Pals</span> Features
         </motion.h2>
 
         <motion.p

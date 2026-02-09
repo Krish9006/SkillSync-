@@ -1,51 +1,5 @@
-[08:59:42.671] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[08:59:42.704] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[08:59:44.805] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[08:59:44.806] Browser ERROR   ./node_modules/next/dist/server/app-render/action-utils.js
-Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'
-
-Import trace for requested module:
-./node_modules/next/dist/server/app-render/action-utils.js
-[08:59:44.944] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[08:59:44.944] Browser ERROR   ./node_modules/next/dist/server/app-render/action-utils.js
-Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'
-
-Import trace for requested module:
-./node_modules/next/dist/server/app-render/action-utils.js
-[08:59:49.835] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[08:59:49.931] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[08:59:51.891] Browser ERROR   ./node_modules/next/dist/server/app-render/action-utils.js
-Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'
-
-Import trace for requested module:
-./node_modules/next/dist/server/app-render/action-utils.js
-[08:59:53.270] Browser ERROR   ./node_modules/next/dist/server/app-render/action-utils.js
-Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'
-
-Import trace for requested module:
-./node_modules/next/dist/server/app-render/action-utils.js
-[08:59:53.272] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[08:59:53.321] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[08:59:53.973] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[08:59:54.021] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[08:59:55.281] Server  ERROR    ⨯ ./node_modules/next/dist/server/app-render/action-utils.js
-Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'
-
-Import trace for requested module:
-./node_modules/next/dist/server/app-render/action-utils.js
-[08:59:55.319] Browser ERROR   ./node_modules/next/dist/server/app-render/action-utils.js
-Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'
-
-Import trace for requested module:
-./node_modules/next/dist/server/app-render/action-utils.js
-[08:59:55.320] Browser ERROR   ./node_modules/next/dist/server/app-render/action-utils.js
-Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\node_modules\next\dist\server\app-render\action-utils.js'
-
-Import trace for requested module:
-./node_modules/next/dist/server/app-render/action-utils.js
-[08:59:55.762] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\.next\dev\routes-manifest.json'
-[08:59:55.871] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\.next\dev\routes-manifest.json'
-[08:59:55.963] Server  ERROR   Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\.next\dev\routes-manifest.json'
-[08:59:56.036] Server  ERROR   Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\.next\dev\routes-manifest.json'
-[08:59:56.132] Server  ERROR   Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\.next\dev\routes-manifest.json'
-[08:59:56.214] Server  ERROR   Error: ENOENT: no such file or directory, open 'C:\Users\gupta\OneDrive\Desktop\SkillSync_Final\frontend\.next\dev\routes-manifest.json'
+[00:00:02.404] Server  LOG     ✓ Ready in 1993ms
+[00:00:08.159] Server  LOG     ○ Compiling /teamfinder ...
+[00:00:35.927] Server  LOG     ○ Compiling / ...
+[00:00:42.766] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:43.659] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

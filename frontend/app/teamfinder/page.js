@@ -152,7 +152,7 @@ export default function TeamFinderPage() {
                         className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-surface border border-brand-primary/30 text-brand-secondary text-sm font-bold mb-8 shadow-[0_0_20px_rgba(124,58,237,0.2)]"
                     >
                         <Sparkles size={14} className="fill-brand-secondary animate-pulse" />
-                        SkillSync AI Matching Active
+                        Project Pals AI Matching Active
                     </motion.div>
 
                     <motion.h1

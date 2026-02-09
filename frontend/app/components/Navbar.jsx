@@ -48,8 +48,8 @@ export default function Navbar() {
   const navLinks = [
     { name: "About", href: "/about" },
     { name: "TeamFinder", href: "/teamfinder" },
-    { name: "Mentorship", href: "/mentors" },
-    { name: "Community", href: "/community" },
+    { name: "Mentorship", href: "/coming-soon" },
+    { name: "Community", href: "/coming-soon" },
   ];
 
   return (
@@ -70,7 +70,7 @@ export default function Navbar() {
               </div>
             </div>
             <span className="text-2xl font-heading font-bold tracking-tight text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-slate-300 transition-all">
-              SkillSync
+              Project Pals
             </span>
           </Link>
 
@@ -105,9 +105,9 @@ export default function Navbar() {
                   <div className="hidden md:flex items-center gap-3 p-1 pr-4 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:border-brand-primary/50 transition-all cursor-pointer group">
                     <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-brand-primary to-brand-accent flex items-center justify-center text-sm font-bold group-hover:scale-110 transition-transform overflow-hidden">
                       {user.image && (user.image.startsWith('http') || user.image.startsWith('/')) ? (
-                        <img src={user.image} alt={user.name} className="w-full h-full object-cover" />
+                        <img src={user.image} alt={user.name || "User"} className="w-full h-full object-cover" />
                       ) : (
-                        <span className="text-lg">{user.image || user.name.charAt(0)}</span>
+                        <span className="text-lg">{(user.name ? user.name.charAt(0) : "U")}</span>
                       )}
                     </div>
                     <span className="text-sm font-medium text-white group-hover:text-brand-primary transition-colors">{user.name}</span>

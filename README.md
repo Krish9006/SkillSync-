@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SkillSync
 
-## Getting Started
+SkillSync is a platform I built to help students connect with each other. It's basically a "Team Finder" for hackathons, projects, or just finding study partners.
 
-First, run the development server:
+I made this because finding the right people to work with is often harder than the work itself. This app solves that by letting you create a profile, show off your skills, and find others who match what you're looking for.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Live Demo
+- **Live Site:** [https://skillsynkrish.netlify.app/](https://skillsynkrish.netlify.app/)
+- **GitHub Repo:** [https://github.com/Krish9006/SkillSync-](https://github.com/Krish9006/SkillSync-)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What it does
+- **Find Teammates:** You can scroll through student profiles to find people with the skills you need.
+- **Connect:** Send connection requests to people you want to work with.
+- **Smart Profiles:** Users can make detailed profiles with their bio, skills, and links.
+- **Real-time Matching:** (In progress) Filter and find users essentially instantly.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech Stack
+I used the MERN stack but with Next.js for better performance and SEO.
 
-## Learn More
+**Frontend:**
+- **Next.js 14** (App Router) - For the structure and routing.
+- **Tailwind CSS** - For styling everything quickly.
+- **Framer Motion & Three.js** - Added some cool 3D elements and smooth animations to make it feel premium.
 
-To learn more about Next.js, take a look at the following resources:
+**Backend:**
+- **Node.js & Express** - Handles the API and server logic.
+- **MongoDB** - Stores all the user data and requests.
+- **JWT** - Secure login and authentication.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How to run it locally
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/yourusername/skillsync.git
+   ```
 
-## Deploy on Vercel
+2. **Frontend Setup**
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Backend Setup**
+   ```bash
+   cd backend
+   npm install
+   # Create a .env file with your MONGO_URI and JWT_SECRET
+   npm start
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Why I built this
+I wanted to build something that solves a real problem I see in college every day. Plus, I wanted to really push my frontend skills with things like 3D graphics and complex layouts.

@@ -36,7 +36,7 @@ export default function SignUpPage() {
                 className="w-full max-w-md bg-os-surface border border-os-border/50 rounded-2xl p-8 relative z-10 shadow-2xl backdrop-blur-xl"
             >
                 <div className="text-center mb-8">
-                    <h1 className="text-3xl font-bold font-heading mb-2">Join SkillSync</h1>
+                    <h1 className="text-3xl font-bold font-heading mb-2">Join Project Pals</h1>
                     <p className="text-slate-400 text-sm">Create your account to start building.</p>
                 </div>
 
