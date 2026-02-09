@@ -24,6 +24,7 @@
     "three": "^0.169.0"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.15.8",
     "@tailwindcss/postcss": "^4.1.17",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.14.0",

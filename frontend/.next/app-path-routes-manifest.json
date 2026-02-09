@@ -1,0 +1,17 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/coming-soon/page": "/coming-soon",
+  "/community/page": "/community",
+  "/create-profile/page": "/create-profile",
+  "/favicon.ico/route": "/favicon.ico",
+  "/features/page": "/features",
+  "/mentors/page": "/mentors",
+  "/page": "/",
+  "/profile/page": "/profile",
+  "/sign-in/page": "/sign-in",
+  "/sign-up/page": "/sign-up",
+  "/teamfinder/page": "/teamfinder",
+  "/teamfinder/requests/page": "/teamfinder/requests"
+}
