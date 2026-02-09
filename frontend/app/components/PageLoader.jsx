@@ -51,7 +51,7 @@ export default function PageLoader() {
                             transition={{ delay: 0.2, duration: 0.5 }}
                             className="text-5xl font-heading font-bold text-gradient"
                         >
-                            Project Pals
+                            Project Buddies
                         </motion.h1>
 
                         {/* Loading Bar */}

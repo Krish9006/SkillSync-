@@ -70,7 +70,7 @@ export default function Navbar() {
               </div>
             </div>
             <span className="text-2xl font-heading font-bold tracking-tight text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-slate-300 transition-all">
-              Project Pals
+              Project Buddies
             </span>
           </Link>
 

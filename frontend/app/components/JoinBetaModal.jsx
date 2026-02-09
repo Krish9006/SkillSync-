@@ -51,10 +51,10 @@ export default function JoinBetaModal({ open, onClose }) {
             {!submitted ? (
               <>
                 <h2 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#7c5cff] via-[#00c2ff] to-[#4fd1c5] text-center mb-4">
-                  Join Project Pals Beta 🚀
+                  Join Project Buddies Beta 🚀
                 </h2>
                 <p className="text-slate-400 text-center mb-8 text-sm leading-relaxed">
-                  Be among the first to explore Project Pals — the network where
+                  Be among the first to explore Project Buddies — the network where
                   students, mentors, and innovators collaborate and grow.
                 </p>
 
@@ -138,7 +138,7 @@ export default function JoinBetaModal({ open, onClose }) {
                   You’re on the list!
                 </h3>
                 <p className="text-slate-400">
-                  Thanks for joining <span className="text-[#00c2ff]">Project Pals Beta</span>.
+                  Thanks for joining <span className="text-[#00c2ff]">Project Buddies Beta</span>.
                   You'll receive early access details soon.
                 </p>
                 <button

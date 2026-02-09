@@ -19,7 +19,7 @@ export default function Footer() {
               <div className="w-8 h-8 bg-signal-blue/20 rounded flex items-center justify-center border border-signal-blue/50">
                 <Power size={18} className="text-signal-blue" />
               </div>
-              <span className="font-heading font-bold text-xl text-white">Project Pals</span>
+              <span className="font-heading font-bold text-xl text-white">Project Buddies</span>
             </div>
             <p className="text-slate-400 mb-8 max-w-sm">
               The platform for ambitious builders.
@@ -64,7 +64,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 font-mono">
           <div>
-            © {new Date().getFullYear()} Project Pals Inc. All rights reserved.
+            © {new Date().getFullYear()} Project Buddies Inc. All rights reserved.
           </div>
           <div className="flex items-center gap-2">
             <span>Built with</span>

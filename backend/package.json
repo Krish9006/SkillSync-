@@ -1,7 +1,7 @@
 {
-  "name": "projectpals-backend",
+  "name": "projectbuddies-backend",
   "version": "1.0.0",
-  "description": "Backend for Project Pals Placement Project",
+  "description": "Backend for Project Buddies Placement Project",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

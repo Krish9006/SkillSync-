@@ -223,7 +223,7 @@ export default function CreateTeamModal({ open, onClose }) {
                                     </motion.div>
                                     <h3 className="text-3xl font-bold text-white mb-3">Team Created!</h3>
                                     <p className="text-slate-400 mb-8 max-w-xs mx-auto leading-relaxed">
-                                        Your team is now live on the Project Pals network. Get ready for applications!
+                                        Your team is now live on the Project Buddies network. Get ready for applications!
                                     </p>
                                     <button
                                         onClick={reset}

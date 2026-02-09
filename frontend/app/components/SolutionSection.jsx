@@ -44,7 +44,7 @@ export default function SolutionSection() {
                             Everything You Need to <span className="text-signal-blue">Succeed.</span>
                         </h2>
                         <p className="text-slate-400 text-lg mb-10 leading-relaxed">
-                            Project Pals gives you the network and tools to stop learning alone and start building your career.
+                            Project Buddies gives you the network and tools to stop learning alone and start building your career.
                         </p>
 
                         <div className="space-y-6">
@@ -87,7 +87,7 @@ export default function SolutionSection() {
                                     <div>
                                         <div className="text-signal-purple font-bold mb-2">## New APIs</div>
                                         <div className="bg-black/50 p-4 rounded border border-white/5 text-xs">
-                                            <span className="text-signal-purple">import</span> <span className="text-yellow-400">{`{ Mentor }`}</span> <span className="text-signal-purple">from</span> <span className="text-green-400">'@projectpals/core'</span>;
+                                            <span className="text-signal-purple">import</span> <span className="text-yellow-400">{`{ Mentor }`}</span> <span className="text-signal-purple">from</span> <span className="text-green-400">'@projectbuddies/core'</span>;
                                             <br /><br />
                                             <span className="text-signal-blue">const</span> <span className="text-white">career</span> = <span className="text-signal-blue">await</span> Mentor.<span className="text-yellow-400">accelerate</span>();
                                         </div>

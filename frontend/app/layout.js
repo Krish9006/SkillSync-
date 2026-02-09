@@ -13,20 +13,20 @@ const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata = {
   metadataBase: new URL("https://skillsynkrish.netlify.app"),
-  title: "Project Pals - Build, Collaborate, Ship",
+  title: "Project Buddies - Build, Collaborate, Ship",
   description: "The ultimate platform for students to find teammates, showcase skills, and build real-world projects together.",
   keywords: ["hackathon", "team finder", "student projects", "developer portfolio", "collaboration"],
   openGraph: {
-    title: "Project Pals - Find Your Dream Team",
+    title: "Project Buddies - Find Your Dream Team",
     description: "Connect with skilled students, form teams, and win hackathons. Built with Next.js & Three.js.",
     url: "https://skillsynkrish.netlify.app",
-    siteName: "Project Pals",
+    siteName: "Project Buddies",
     images: [
       {
         url: "/opengraph-image.png", // We will need to add this file
         width: 1200,
         height: 630,
-        alt: "Project Pals Dashboard Preview",
+        alt: "Project Buddies Dashboard Preview",
       },
     ],
     locale: "en_US",
@@ -34,7 +34,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Project Pals - The LinkedIn for Hackathons",
+    title: "Project Buddies - The LinkedIn for Hackathons",
     description: "Don't build alone. Find the perfect teammate based on verified skills.",
     images: ["/opengraph-image.png"], // Same image
   },
